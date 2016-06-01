@@ -1,0 +1,81 @@
+{
+  "name":    "acquia/data",
+  "license": "proprietary",
+  "type":    "project",
+  "description": "${project.acquia_subname}",
+  "repositories": [
+    {
+      "type": "composer",
+      "url":  "https://packagist.drupal-composer.org"
+    }
+  ],
+  "require": {
+    "cweagans/composer-patches":                  "~1.0",
+    "composer/installers":                        "^1.0.20",
+    "drupal/adminimal_theme" :                    "8.1.1",
+    "drupal/admin_toolbar":                       "8.1.14",
+    "drupal/autologout":                          "8.1.0-rc1",
+    "drupal/devel":                               "8.*",
+    "drupal/field_group":                         "dev-8.x-1.x#14173e352948b97a455b48586d3e022a864a38c6",
+    "drupal/google_analytics":                    "8.2.0-rc1",
+    "drupal/services":                            "8.4.0-alpha3",
+    "drupal/token":                               "8.1.0-alpha2",
+    "guzzlehttp/guzzle" :                         "^6.0@dev",
+    "drupal/core":                                "~8",
+    "drupal/console":                             "~0.10",
+    "drupal/memcache" :                           "8.*",
+    "drupal/security_review" :                    "8.*",
+    "roave/security-advisories":                  "dev-master",
+    "drupal-composer/drupal-security-advisories": "8.0.x-dev",
+    "drupal/auto_entitylabel": "8.*"
+  },
+  "require-dev": {
+    "behat/behat":                  "3.0.*",
+    "behat/mink":                   "1.6@stable",
+    "behat/mink-extension":         "*",
+    "behat/mink-goutte-driver":     "*",
+    "behat/mink-selenium2-driver":  "*",
+    "behat/mink-browserkit-driver": "*",
+    "drush/drush":                  "^9.0",
+    "drupal/drupal-extension":      "~3.0",
+    "drupal/coder":                 "~8.2",
+    "phpunit/phpunit":              "4.6.*",
+    "squizlabs/php_codesniffer":    "2.*",
+    "phing/phing":                  "dev-master#0ef30e55bb5871cb38903cc0ee9d76074118a22c",
+    "jakoch/phantomjs-installer":   "1.9.8",
+    "jarnaiz/behat-junit-formatter": "^1.2"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Drupal\\Tests\\PHPUnit\\": "tests/phpunit/src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable":     true,
+  "extra": {
+    "installer-paths": {
+      "docroot/core":                     ["type:drupal-core"],
+      "docroot/modules/contrib/{$name}":  ["type:drupal-module"],
+      "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "docroot/themes/contrib/{$name}":   ["type:drupal-theme"],
+      "drush/contrib/{$name}":            ["type:drupal-drush"]
+    },
+    "patches": {
+      "drupal/core": {
+        "Ignore front end vendor folders to improve directory search performance": "https://www.drupal.org/files/issues/ignore_front_end_vendor-2329453-116.patch",
+        "Twig debug output does not display all suggestions when an array of suggestions is passed to theme": "https://www.drupal.org/files/issues/twig_debug_output_does-2118743-89.patch"
+      },
+      "drupal/adminimal_theme": {
+        "Incompatible with admin toolbar": "https://www.drupal.org/files/issues/incompatible_with_admin-2635456-4_0.patch"
+      },
+      "drupal/auto_entitylabel": {
+        "Fix token link": "https://www.drupal.org/files/issues/no_token-2734211-2.patch"
+      }
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "PhantomInstaller\\Installer::installPhantomJS"
+    ]
+  }
+}

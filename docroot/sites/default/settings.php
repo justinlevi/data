@@ -244,7 +244,8 @@ $databases = array();
  *   );
  * @endcode
  */
-$config_directories = array();
+//$config_directories = array();
+$config_directories['sync'] = '../config/sync';
 
 /**
  * Settings:
@@ -698,6 +699,15 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
  */
+
+$settings['trusted_host_patterns'] = array(
+  '^wintercreative\.com$',
+  '^.+\.wintercreative\.com$',
+  '^data\.dev$',
+  '^.+\.data\.dev$',
+  '^data\.vm$',
+  '^.+\.data\.vm$',
+);
 
 // Includes required Acquia configuration and set $base_url correctly.
 require DRUPAL_ROOT . '/sites/default/settings/base.settings.php';

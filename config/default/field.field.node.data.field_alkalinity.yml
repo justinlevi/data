@@ -1,0 +1,25 @@
+uuid: d4f21568-f348-48be-8c20-16edb09fe7de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alkalinity
+    - node.type.data
+id: node.data.field_alkalinity
+field_name: field_alkalinity
+entity_type: node
+bundle: data
+label: 'Total Alkalinity'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 250
+  prefix: ''
+  suffix: ppm
+field_type: float

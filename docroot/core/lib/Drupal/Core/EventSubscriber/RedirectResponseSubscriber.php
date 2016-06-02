@@ -4,7 +4,7 @@ namespace Drupal\Core\EventSubscriber;
 
 use Drupal\Component\HttpFoundation\SecuredRedirectResponse;
 use Drupal\Component\Utility\UrlHelper;
-use Drupal\Core\Routing\TrustedRedirectResponse;
+use Drupal\Core\Routing\LocalRedirectResponse;
 use Drupal\Core\Routing\RequestContext;
 use Drupal\Core\Utility\UnroutedUrlAssemblerInterface;
 use Symfony\Component\HttpFoundation\Response;
@@ -170,4 +170,5 @@ class RedirectResponseSubscriber implements EventSubscriberInterface {
     $events[KernelEvents::REQUEST][] = array('sanitizeDestination', 100);
     return $events;
   }
+
 }

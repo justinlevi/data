@@ -1,0 +1,62 @@
+uuid: ac17155a-25d1-48bf-8a12-da132439be1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.data.field_alkalinity
+    - field.field.node.data.field_free_chlorine
+    - field.field.node.data.field_ph
+    - field.field.node.data.field_total_chlorine
+    - node.type.data
+  module:
+    - user
+_core:
+  default_config_hash: '-6BKZ5i5eqmOfHXK-tdS9dOlgj8FSwh1m6qHMWdjiAc'
+id: node.data.default
+targetEntityType: node
+bundle: data
+mode: default
+content:
+  field_alkalinity:
+    weight: 3
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  field_free_chlorine:
+    weight: 1
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  field_ph:
+    weight: 0
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  field_total_chlorine:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+hidden:
+  links: true
+  title: true

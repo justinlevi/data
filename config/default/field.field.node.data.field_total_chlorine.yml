@@ -1,0 +1,25 @@
+uuid: 467e0f10-26e1-4dc0-a98c-fb5d60bf5e37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_total_chlorine
+    - node.type.data
+id: node.data.field_total_chlorine
+field_name: field_total_chlorine
+entity_type: node
+bundle: data
+label: 'Total Chlorine'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 10
+  prefix: ''
+  suffix: ppm
+field_type: float

@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - core.entity_view_mode.node.teaser
+        - field.field.node.data.field_alkalinity
+        - field.field.node.data.field_free_chlorine
+        - field.field.node.data.field_ph
+        - field.field.node.data.field_total_chlorine
+        - node.type.data
+    module:
+        - title
+        - user
+_core:
+    default_config_hash: VlqvbFgbpxupy5pMm2Ljs0XQ91nibN-GaWb34R_Z4tY
+id: node.data.teaser
+targetEntityType: node
+bundle: data
+mode: teaser
+content:
+    links:
+        weight: 100
+    title:
+        type: linked_and_wrapped
+        settings:
+            tag: h2
+            linked: true
+            classes: ''
+        weight: -5
+        label: above
+        third_party_settings: {  }
+hidden:
+    field_alkalinity: true
+    field_free_chlorine: true
+    field_ph: true
+    field_total_chlorine: true

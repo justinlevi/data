@@ -22,12 +22,11 @@
     "drupal/token":                               "8.1.0-alpha2",
     "guzzlehttp/guzzle" :                         "^6.0@dev",
     "drupal/core":                                "~8",
-    "drupal/console":                             "~0.10",
     "drupal/memcache" :                           "8.*",
     "drupal/security_review" :                    "8.*",
     "roave/security-advisories":                  "dev-master",
     "drupal-composer/drupal-security-advisories": "8.0.x-dev",
-    "drupal/auto_entitylabel": "8.*"
+    "drupal/title": "8.2.x-dev"
   },
   "require-dev": {
     "behat/behat":                  "3.0.*",

@@ -1,0 +1,12 @@
+uuid: 6e2357de-102a-4c4c-8977-cc5e9e7f9e16
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - no-reply@acquia.com
+reply: ''
+weight: 0

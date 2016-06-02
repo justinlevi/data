@@ -1,0 +1,5 @@
+name: Data Logger
+type: module
+description: Just a Data Logger
+core: 8.x
+package: Custom

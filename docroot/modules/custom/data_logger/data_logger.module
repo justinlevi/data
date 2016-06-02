@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Contains data_logger.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function data_logger_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+      // Main module help for the data_logger module.
+        case 'help.page.data_logger':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('Just a Data Logger') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+
+function data_logger_node_presave($node)
+{
+    $node->title = date("F j, Y, g:i a");
+}

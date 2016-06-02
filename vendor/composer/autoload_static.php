@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202
+class ComposerStaticInit055c295e3b5f2e752a8309463105f639
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -14,17 +14,12 @@ class ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202
         '32dcc8afd4335739640db7d200c1971d' => __DIR__ . '/..' . '/symfony/polyfill-apcu/bootstrap.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
-        'd9d39f82a605ebe5918f683dd402334c' => __DIR__ . '/..' . '/padraic/humbug_get_contents/src/function.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'p' => 
-        array (
-            'phpseclib\\' => 10,
-        ),
         'c' => 
         array (
             'cweagans\\Composer\\' => 18,
@@ -50,23 +45,13 @@ class ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202
             'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\HttpKernel\\' => 29,
             'Symfony\\Component\\HttpFoundation\\' => 33,
-            'Symfony\\Component\\Finder\\' => 25,
-            'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\EventDispatcher\\' => 34,
-            'Symfony\\Component\\DomCrawler\\' => 29,
             'Symfony\\Component\\DependencyInjection\\' => 38,
             'Symfony\\Component\\Debug\\' => 24,
-            'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
-            'Symfony\\Component\\Config\\' => 25,
             'Symfony\\Component\\ClassLoader\\' => 30,
             'Symfony\\Cmf\\Component\\Routing\\' => 30,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
-            'Stecman\\Component\\Symfony\\Console\\BashCompletion\\' => 49,
-        ),
-        'R' => 
-        array (
-            'RedBeanPHP\\' => 11,
         ),
         'P' => 
         array (
@@ -75,11 +60,6 @@ class ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202
         'M' => 
         array (
             'Masterminds\\' => 12,
-        ),
-        'H' => 
-        array (
-            'Humbug\\SelfUpdate\\' => 18,
-            'Humbug\\' => 7,
         ),
         'G' => 
         array (
@@ -91,7 +71,6 @@ class ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202
         array (
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
-            'Drupal\\Console\\' => 15,
             'Drupal\\Component\\' => 17,
             'Doctrine\\Common\\Cache\\' => 22,
         ),
@@ -100,17 +79,9 @@ class ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202
             'Composer\\Semver\\' => 16,
             'Composer\\Installers\\' => 20,
         ),
-        'A' => 
-        array (
-            'Alchemy\\Zippy\\' => 14,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'phpseclib\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
-        ),
         'cweagans\\Composer\\' => 
         array (
             0 => __DIR__ . '/..' . '/cweagans/composer-patches/src',
@@ -179,21 +150,9 @@ class ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202
         array (
             0 => __DIR__ . '/..' . '/symfony/http-foundation',
         ),
-        'Symfony\\Component\\Finder\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/finder',
-        ),
-        'Symfony\\Component\\Filesystem\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/filesystem',
-        ),
         'Symfony\\Component\\EventDispatcher\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
-        ),
-        'Symfony\\Component\\DomCrawler\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/dom-crawler',
         ),
         'Symfony\\Component\\DependencyInjection\\' => 
         array (
@@ -203,17 +162,9 @@ class ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202
         array (
             0 => __DIR__ . '/..' . '/symfony/debug',
         ),
-        'Symfony\\Component\\CssSelector\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/css-selector',
-        ),
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
-        ),
-        'Symfony\\Component\\Config\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/config',
         ),
         'Symfony\\Component\\ClassLoader\\' => 
         array (
@@ -227,14 +178,6 @@ class ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
         ),
-        'Stecman\\Component\\Symfony\\Console\\BashCompletion\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/stecman/symfony-console-completion/src',
-        ),
-        'RedBeanPHP\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/gabordemooij/redbean/RedBeanPHP',
-        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
@@ -242,14 +185,6 @@ class ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202
         'Masterminds\\' => 
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
-        ),
-        'Humbug\\SelfUpdate\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/padraic/phar-updater/src',
-        ),
-        'Humbug\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/padraic/humbug_get_contents/src/Humbug',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -271,10 +206,6 @@ class ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202
         array (
             0 => __DIR__ . '/../..' . '/docroot/core/lib/Drupal/Core',
         ),
-        'Drupal\\Console\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/drupal/console/src',
-        ),
         'Drupal\\Component\\' => 
         array (
             0 => __DIR__ . '/../..' . '/docroot/core/lib/Drupal/Component',
@@ -290,10 +221,6 @@ class ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202
         'Composer\\Installers\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
-        ),
-        'Alchemy\\Zippy\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/alchemy/zippy/src',
         ),
     );
 
@@ -371,10 +298,10 @@ class ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitfb91ebc757a518ea1b6c32b671ca2202::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit055c295e3b5f2e752a8309463105f639::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit055c295e3b5f2e752a8309463105f639::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit055c295e3b5f2e752a8309463105f639::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit055c295e3b5f2e752a8309463105f639::$classMap;
 
         }, null, ClassLoader::class);
     }
